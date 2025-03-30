@@ -1,2 +1,3 @@
-# Lab_01
-Lab Assignments for C++ learning, stay tuned
+Cpp-programming
+
+Here you can work on bunch of Lab Assignments and Projects while improving your C++ skills
