@@ -1,24 +1,29 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+
+int main()
+{
     int a;
 
-    cout<<"Enter the number: ";
-    cin>>a;
+    cout << "Enter the number: ";
+    cin >> a;
 
-    if(a>0){
-        cout<<"Number is Positive!";
+    if (cin.fail())
+    {
+        cout << "Invalid input! Please enter a valid integer." << endl;
     }
-    else if (a<0){
-        cout<<"Number is Negative!";
+    else if (a > 0)
+    {
+        cout << "Number is Positive!" << endl;
     }
-    else if (a==0){
-        cout<<"Number is neither Negative nor Positive!";
+    else if (a < 0)
+    {
+        cout << "Number is Negative!" << endl;
     }
-    else{
-        cout<<"Invalid data type!";
+    else
+    {
+        cout << "Number is 0!" << endl;
     }
 
-    system("pause");
     return 0;
 }
