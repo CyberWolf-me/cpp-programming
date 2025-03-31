@@ -12,7 +12,6 @@ int main()
     cout << "Enter the coefficient of the quadratic equation(ax^2+bx+c=0): ";
     cin >> a >> b >> c;
 
-    discriminant = b * b - 4 * a * c;
     if (a == 0)
     {
         cout << "It is not a quadratic equation!";
@@ -24,11 +23,15 @@ int main()
         {
             cout << "The solution of this equation is: " << (-c) / b;
         }
+        return 0;
     }
-    else if (discriminant > 0)
+
+    discriminant = b * b - 4 * a * c;
+
+    if (discriminant > 0)
     {
-        cout << "The first root of the equaion is: " << (-b + sqrt(discriminant)) / (2 * a);
-        cout << "The second root of the equaion is: " << (-b - sqrt(discriminant)) / (2 * a);
+        cout << "The first root of the equation is: " << (-b + sqrt(discriminant)) / (2 * a);
+        cout << "The second root of the equation is: " << (-b - sqrt(discriminant)) / (2 * a);
     }
     else if (discriminant == 0)
     {
@@ -40,7 +43,7 @@ int main()
     }
     else
     {
-        cout << "Error:Invalid coeffienct input!";
+        cout << "Error: Invalid coefficient input!";
     }
 
     return 0;
