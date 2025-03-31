@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
     int salary;
@@ -10,25 +11,25 @@ int main()
     cout << "Enter your salary: ";
     cin >> salary;
 
-    if (salary <= 1500)
+    if (cin.fail())
+    {
+        cout << "Error: Invalid input! Please enter a numeric value.";
+    }
+    else if (salary <= 1500)
     {
         cout << "There are no taxes for you!";
     }
     else if (salary <= 3000)
     {
-        cout << "There is 10% tax for you which will be: " << (salary * 10) / 100 << "$";
+        cout << "There is 10% tax for you, which will be: " << (salary * 10) / 100 << "$";
     }
     else if (salary < 5000)
     {
-        cout << "There is 20% tax for you which will be: " << (salary * 20) / 100 << "$";
-    }
-    else if (salary >= 5000)
-    {
-        cout << "There is 30% tax for you which will be: " << (salary * 30) / 100 << "$";
+        cout << "There is 20% tax for you, which will be: " << (salary * 20) / 100 << "$";
     }
     else
     {
-        cout << "Error: Invalid salary input!";
+        cout << "There is 30% tax for you, which will be: " << (salary * 30) / 100 << "$";
     }
 
     return 0;
