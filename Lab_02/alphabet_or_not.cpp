@@ -10,12 +10,7 @@ int main()
     cout << "Enter the character: ";
     cin >> a;
 
-    if (cin.fail())
-    {
-        cout << "Invalid data input!";
-        return 0;
-    }
-    else if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
+       if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
     {
         cout << "The character is an alphabet!" << endl;
     }
