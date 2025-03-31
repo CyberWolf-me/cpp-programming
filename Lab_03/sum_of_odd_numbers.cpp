@@ -26,6 +26,7 @@ int main()
     {
         sum += i;
     }
+
     cout << "The sum of the odd numbers from " << 1 << " to " << k << " is: " << sum << endl;
 
     return 0;
