@@ -14,17 +14,18 @@ int main()
     {
         cout << "Error: Invalid data input!";
     }
+    else if (m > n)
+    {
+        cout << "Error: M should be less or equal to N!" << 0;
+    }
     else if (m == n)
     {
         cout << "The sum is: " << m;
     }
-    else if (m > n)
-    {
-        cout << "The sum is: " << 0;
-    }
     else
     {
-        cout << "The sum from " << m << " to " << n << " is: " << (n * (n + 1) * 0.5);
+        sum = (n * (n + 1) / 2) - ((m - 1) * m / 2);
+        cout << "The sum from " << m << " to " << n << " is: " << sum;
     }
 
     return 0;
