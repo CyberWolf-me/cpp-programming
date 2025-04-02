@@ -13,7 +13,6 @@ int main()
     cout << "----------------------------------------" << endl;
 
     int x, y;
-
     cout << "Enter the values of a and b: ";
     cin >> x >> y;
     swapping(x, y);
