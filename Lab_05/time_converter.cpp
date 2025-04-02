@@ -1,18 +1,30 @@
 #include <iostream>
 using namespace std;
-int converting_time(int hours, int minutes, int seconds)
+double converting_time(double hours, double minutes, double seconds)
 {
-    minutes = hours * 60 + minutes + seconds / 60;
+    minutes = (hours * 60) + minutes + (seconds / 60);
     return minutes;
 }
 int main()
 {
-    int hours;
-    int minutes;
-    int seconds;
+    double hours, minutes, seconds;
 
-    cout << "Enter the time:(x hours y minutes and z seconds): ";
-    cin >> hours >> minutes >> seconds;
+    cout << "Enter the time: " << endl;
+    cout << "Hours: ";
+    cin >> hours;
+    cout << "Minutes: ";
+    cin >> minutes;
+    cout << "Seconds: ";
+    cin >> seconds;
 
-    cout << "All of them in minutes: " << converting_time(hours, minutes, seconds) << endl;
+    if (hours >= 0 && minutes >= 0 && seconds >= 0)
+    {
+        cout << "All of them in minutes: " << converting_time(hours, minutes, seconds) << endl;
+    }
+    else
+    {
+        cout << "Invalid Input!" << endl;
+    }
+
+    return 0;
 }
