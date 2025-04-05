@@ -1,39 +1,20 @@
 #include <iostream>
 using namespace std;
-int findMax(int a, int b, int c)
+template <typename T>
+T findMax(T a, T b, T c)
 {
-    int max = a;
+    T max = a;
     if (max == b && b == c)
     {
-        return max;
+        max = b;
     }
     else if (b >= max && b >= c)
     {
-        return b;
+        max = b;
     }
     else if (c >= max && c >= b)
     {
-        return c;
-    }
-    else
-    {
-        return max;
-    }
-}
-float findMax(float d, float e, float f)
-{
-    float max = d;
-    if (max == e && e == f)
-    {
-        max = e;
-    }
-    else if (e >= max && e >= f)
-    {
-        max = e;
-    }
-    else if (f >= max && f >= e)
-    {
-        max = f;
+        max = c;
     }
     else
     {
