@@ -4,11 +4,7 @@ template <typename T>
 T findMax(T a, T b, T c)
 {
     T max = a;
-    if (max == b && b == c)
-    {
-        max = b;
-    }
-    else if (b >= max && b >= c)
+    if (b >= max && b >= c)
     {
         max = b;
     }
@@ -16,10 +12,7 @@ T findMax(T a, T b, T c)
     {
         max = c;
     }
-    else
-    {
-        return max;
-    }
+    return max;
 }
 int main()
 {

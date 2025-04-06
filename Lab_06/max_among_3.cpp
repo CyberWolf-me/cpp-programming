@@ -3,31 +3,20 @@ using namespace std;
 int findMax(int a, int b, int c)
 {
     int max = a;
-    if (max == b && b == c)
+    if (b >= max && b >= c)
     {
-        return max;
-    }
-    else if (b >= max && b >= c)
-    {
-        return b;
+        max = b;
     }
     else if (c >= max && c >= b)
     {
-        return c;
+        max = c;
     }
-    else
-    {
-        return max;
-    }
+    return max;
 }
 float findMax(float d, float e, float f)
 {
     float max = d;
-    if (max == e && e == f)
-    {
-        max = e;
-    }
-    else if (e >= max && e >= f)
+    if (e >= max && e >= f)
     {
         max = e;
     }
@@ -35,10 +24,7 @@ float findMax(float d, float e, float f)
     {
         max = f;
     }
-    else
-    {
-        return max;
-    }
+    return max;
 }
 int main()
 {
