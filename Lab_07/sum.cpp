@@ -2,14 +2,14 @@
 using namespace std;
 int findSum(int n)
 {
-    if (n == 0)
+    if (n <= 0)
     {
         return 0;
     }
-    else if (n == 1)
-    {
-        return 1;
-    }
+    // else if (n == 1) no need bcs it is checking in if condition
+    // {
+    //     return 1;
+    // }
     else
     {
         return n + findSum(n - 1);
@@ -30,14 +30,14 @@ int main()
     //     cout << "Sum is: " << 0 << endl;
     // }
 
-    if (n >= 1)
+    if (n < 0)
     {
-        cout << "Sum of numbers from " << 1 << " to " << n << " is: " << findSum(n) << endl;
+        cout << "Error: Invalid input!" << endl;
     }
 
     else
     {
-        cout << "Error: Invalid input!" << endl;
+        cout << "Sum of numbers from " << 1 << " to " << n << " is: " << findSum(n) << endl;
     }
 
     return 0;
