@@ -13,7 +13,7 @@ double calculatePower(int x, int y)
     }
     else
     {
-        return 1.0 / calculatePower(x, -y); // negative exponent
+        return 1.0 / calculatePower(x, -y); // negative exponent // good point
     }
 }
 
