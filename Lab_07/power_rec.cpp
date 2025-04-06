@@ -1,20 +1,25 @@
 #include <iostream>
 using namespace std;
-int calculatePower(int x, int y)
+
+double calculatePower(int x, int y)
 {
     if (y == 0)
     {
         return 1;
     }
-    else
+    else if (y > 0)
     {
         return x * calculatePower(x, y - 1);
     }
+    else
+    {
+        return 1.0 / calculatePower(x, -y); // negative exponent
+    }
 }
+
 int main()
 {
-    // Calculate the x^y (power) using recursion.
-    cout << "\nProgram to calculate the x^y (power) using recursion " << endl;
+    cout << "\nProgram to calculate x^y (power) using recursion " << endl;
     cout << "------------------------------------------------------" << endl;
 
     int a, b;
@@ -23,5 +28,15 @@ int main()
     cout << "To which power do you want to raise?: ";
     cin >> b;
 
-    cout << a << "^" << b << " is: " << calculatePower(a, b) << endl;
+    // special cases
+    if (a == 0 && b == 0)
+    {
+        cout << "Error: 0^0 is undefined!" << endl;
+    }
+    else
+    {
+        cout << a << "^" << b << " is: " << calculatePower(a, b) << endl;
+    }
+
+    return 0;
 }
