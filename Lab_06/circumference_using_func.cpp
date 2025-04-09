@@ -22,7 +22,7 @@ int main()
     int s1, s2;
     double a, b, c, s;
     cout << "\nProgram to print out circumference of simple shapes, using functions" << endl;
-    cout << "------------------------------------------------------------------------" << endl;
+    cout << "-----------------------------------------------------------------------" << endl;
 
     cout << "Enter the value of radius of the circle: ";
     cin >> radius;
