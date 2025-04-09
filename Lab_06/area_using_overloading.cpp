@@ -24,11 +24,10 @@ float Area(float x)
 {
     return pow(x, 2); // Area of Square (Changed to double)
 }
-
 int main()
 {
     cout << "\nProgram to calculate Areas of shapes" << endl;
-    cout << "--------------------------------------" << endl;
+    cout << "---------------------------------------" << endl;
 
     double radius, siderec1, siderec2, x, y, z;
     float side;
