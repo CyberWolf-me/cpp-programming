@@ -20,7 +20,7 @@ double calculatePower(int x, int y)
 int main()
 {
     cout << "\nProgram to calculate x^y (power) using recursion " << endl;
-    cout << "------------------------------------------------------" << endl;
+    cout << "-----------------------------------------------------" << endl;
 
     int a, b;
     cout << "Enter the number: ";
