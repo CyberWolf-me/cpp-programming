@@ -5,7 +5,7 @@ int main()
     int k, sum = 0;
 
     cout << "\nProgram to calculate the sum of odd numbers from 1 to k" << endl;
-    cout << "---------------------------------------------------------" << endl;
+    cout << "--------------------------------------------------------" << endl;
 
     // Should calculate from 1 to k(odd numbers);
     // we know where it starts and where it ends ;
