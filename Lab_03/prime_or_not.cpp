@@ -9,9 +9,9 @@ int main()
     cout << "------------------------------------------------" << endl;
 
     // prime == is a number that has only 2 divisors(1 or itself)
-    // divisors== should be checked if it is prime or not
+    // divisors == should be checked if it is prime or not
     // how do we check == using for loop
-    // first prime number== 2 last -->> till sqrt(prime) optimized version
+    // first prime number == 2 last -->> till sqrt(prime) optimized version
     // so we need to check for the divisors from 2 to sqrt(2) should  stop when
     // divisor is found-->>using what-->>bool if(has divisor number=false) and should stop by break;
 
