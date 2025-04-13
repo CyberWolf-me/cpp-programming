@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int *fun(int n)
+int *fun(int n) // Creates an array and returns pointer/array(of first element)
 {
     int *a;
     a = new int[n];
