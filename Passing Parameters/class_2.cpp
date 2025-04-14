@@ -43,4 +43,6 @@ int main()
     cin >> l >> b;
     r.initialise(l, b);
     r.display();
+
+    return 0;
 }
