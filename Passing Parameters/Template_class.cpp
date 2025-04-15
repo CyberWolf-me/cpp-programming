@@ -38,5 +38,6 @@ int main()
     cout << "Add: " << r2.add() << endl;
     cout << "Subtract: " << r2.sub() << endl;
 
+    system("pause");
     return 0;
 }
