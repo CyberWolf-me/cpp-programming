@@ -12,5 +12,6 @@ int main()
     sum = add(x, y);
     cout << "Sum is: " << sum << endl;
 
+    system("pause");
     return 0;
 }
