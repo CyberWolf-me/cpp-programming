@@ -49,6 +49,6 @@ int main()
     r.setBreadth(40);
     r.setLength(50);
     r.display();
-
+    system("pause");
     return 0;
 }
