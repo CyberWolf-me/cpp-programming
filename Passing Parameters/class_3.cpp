@@ -39,7 +39,7 @@ public:
     }
     void display()
     {
-        cout << "Area isss:  " << area() << endl;
+        cout << "Area issss:  " << area() << endl;
         cout << "Perimeter is: " << perimeter() << endl;
     }
 };
